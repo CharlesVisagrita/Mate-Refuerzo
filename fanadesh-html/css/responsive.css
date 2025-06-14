@@ -151,3 +151,79 @@
     }
 
 }
+/* ...existing code... */
+
+/* Responsive styles for mobile devices */
+@media (max-width: 991px) {
+  .hero-container.container,
+  .about_section .container,
+  .admission_section .container,
+  .why_section .container,
+  .determine_section .container,
+  .contact_section .container,
+  .info_section .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .col-md-6,
+  .col-md-3 {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
+
+  .hero_detail-box,
+  .about_detail-box,
+  .admission_detail-box,
+  .why_detail-box,
+  .determine_detail-box {
+    text-align: center;
+  }
+
+  .hero_img-container img,
+  .about_img-container img,
+  .admission_img-container img,
+  .why_img-container img,
+  .determine_img-container img,
+  .contact_img-box img {
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  h1, h2, h3, h5 {
+    font-size: 1.2em;
+  }
+  .hero_detail-box p,
+  .about_detail-box p,
+  .admission_detail-box p,
+  .why_detail-box p,
+  .determine_detail-box p {
+    font-size: 1em;
+  }
+  .call_to-btn {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+  img[width], img[height] {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+/* ...existing code... */
