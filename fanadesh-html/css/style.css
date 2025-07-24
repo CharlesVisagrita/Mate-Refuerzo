@@ -1,6 +1,6 @@
 body {
   font-family: 'Raleway', sans-serif;
-  background-color: #ffffff;
+  background-image: url('../images/body-bg.png');
 }
 .game {
     display: flex;
@@ -10,7 +10,6 @@ body {
     margin-bottom: 20px;
     padding-top: 100px;
 }
-
 
 /*video prueba*/
 .video-container {
@@ -60,9 +59,10 @@ video {
     box-shadow: 4px 4px 8px 4px rgba(0,0,0,0.5);
 }
 .imagen4 {
-    width: 70%;
-    height: 700px;
+    width: 100%;
+    height: 600px;
     border-radius: 15px;
+    object-fit: cover;
     box-shadow: 4px 4px 8px 4px rgba(0,0,0,0.5);
 }
 .imagen5 {
@@ -168,29 +168,59 @@ video {
 /*header section*/
 
 .header_section {
-  padding-top: 10px;
-  font-family:'Times New Roman', Times, serif
-
+  padding-left: 0px;
+  width:100%;
+  padding-top: 0px;
+  font-weight: 1000;
+  font-family:'times  new roman', Times, serif;
+  background: linear-gradient(#19fff4 #b8fdf9);
 }
 
 nav.navbar.navbar-expand-lg {
 
-  padding: 10px 0;
+  padding: 10px;
 }
 
 .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
-  padding: 10px 20px;
+  padding: 10px 30px;
   color: #000000;
   text-align: center;
+  align-items: center;
+  padding-right:30px;
 
 }
 .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link:hover {
-  transition:all 0.3s ease 0s;
+  transition:all 0.25s ease;
   box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.7);
   transform: translateY(-7px);
+  text-transform: #ffffff;
+  background-color: #ffffff6d;
 } 
 
-
+.logo-container {
+   position:relative;
+  display: flex;
+  align-items: center;
+  height:90px;
+  width:calc(90px x 3.1416);
+  padding: 0 30px;
+  overflow:hidden;
+  margin-bottom:2px;
+  margin-right:10px;
+  box-sizing: border-box;
+}
+.logo-container1 {
+  position:relative;
+  display: flex;
+  align-items: center;
+  height:85px;
+  width:calc(85px x 3.1416);
+  padding: 0 30px;
+  overflow:hidden;
+  margin:5px 0;
+  margin-left:10px;
+  box-sizing: border-box;
+}
 a,
 a:hover,
 a:focus {
@@ -221,35 +251,28 @@ a:focus {
   height: 100%;
   background: url(../images/body-bg.png);
   background-size: 100% 100%;
-  background-position: right bottom;
-  background-repeat: no-repeat;
+  background-position: right bottom;  background-repeat: no-repeat;
   z-index: -1;
 }
 
 .top_container::before {
-  height: 100px;
+  height: 105px;
   background-color: #f7f7a8;
-  background: linear-gradient( to right, #6b72ff, #a8a9f7);
+  background: linear-gradient( to right, #73bbff, #c8efff);
 }
 
 .top_container::after {
   content: "";
   position: absolute;
   width: 75px;
-  height: 75px;
-  bottom: 20%;
+  height: 85px;
+  bottom: 10%;
   left: 6%;;
 }
 
 
 .sub_page .top_container::after {
   display: none;
-}
-
-
-.navbar-brand img {
-  width: 25px;
-  margin-right: 7px;
 }
 
 
@@ -264,6 +287,7 @@ a:focus {
 }
 
 .navbar-brand {
+  padding-left:20px;
   display: flex;
   align-items: center;
 }
@@ -292,12 +316,25 @@ a:focus {
 /*end header section*/
 
 /* hero section */
+.hero_section {
+  height:100%;
+  width:100%;
+  border-radius: 30px;
+  background-color: #ffffffbd;
+}
 .hero-container {
   display: flex;
   padding-top: 90px;
   padding-bottom: 325px;
+  margin:50px auto;
+  width: 100%;
 }
+.hero-container.container {
+  padding-bottom: 75px;
+  width: 100%;
+    display: flex;
 
+}
 .hero_detail-box {
   width: 40%;
 }
@@ -306,21 +343,22 @@ a:focus {
   width: 68%;
   margin-right: -8%;
   margin-top: -5%;
-  padding-left:70px
+  padding-left:70px;
 }
 
 .hero_img-container img {
-  width: 100%;
-  box-shadow: 4px 4px 8px -4px rgba(0, 0, 0, 0.7);
+  width: 60%;
+  box-shadow: 8px 8px 16px -8px rgba(0, 0, 0, 0.7);
+  margin-left: 20%;
 }
 
 .hero_detail-box {
-  color: #212121;
+  color: #000000;
 }
 
 .hero_detail-box h1 {
   font-size: 50px;
-  color: #1565C0;
+  color: #ff0000;
   font-weight: 600;
   width: 70%;
 }
@@ -540,8 +578,6 @@ a:focus {
   margin: 15px 0;
 }
 
-
-
 .contact_form-container button {
   border: none;
   background-color: #6bd1bd;
@@ -581,6 +617,11 @@ a:focus {
   background-color: #363636;
   color: #ffffff;
   font-family: 'Poppins', sans-serif;
+}
+
+.info_section .row {
+  align-items: center;
+  margin-left: 5%;
 }
 
 .info_logo-box {
