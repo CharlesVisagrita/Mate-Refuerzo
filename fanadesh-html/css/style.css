@@ -37,7 +37,7 @@ video {
 
 /*prueba columna*/
 .columna3 {
-    background-color: #e0ebf4;
+    background-color: #aedbff9e;
     padding: 30px;
     margin: 0 10px;
     text-align: justify;
@@ -51,6 +51,12 @@ video {
     flex: 1; 
     margin-right: 25px; 
 }
+.imagen1{
+    height: 250px;
+    border-radius: 20px;
+    margin-top: 3%;
+    box-shadow: 4px 4px 8px 4px rgba(0,0,0,0.5);
+}
 
 .imagen3 {
     width: 70%;
@@ -59,10 +65,10 @@ video {
     box-shadow: 4px 4px 8px 4px rgba(0,0,0,0.5);
 }
 .imagen4 {
-    width: 100%;
-    height: 600px;
+    width: 40%;
+    height: 450px;
     border-radius: 15px;
-    object-fit: cover;
+    object-fit:scale-down;
     box-shadow: 4px 4px 8px 4px rgba(0,0,0,0.5);
 }
 .imagen5 {
@@ -83,7 +89,7 @@ video {
     font-weight: 600;
 }
 .columna-3 p{
-    font-size: 18px;
+    font-size: 23px;
 }
 
 .contenedor-3 {
@@ -171,8 +177,8 @@ video {
   padding-left: 0px;
   width:100%;
   padding-top: 0px;
-  font-weight: 1000;
-  font-family:'times  new roman', Times, serif;
+  font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
   background: linear-gradient(#19fff4 #b8fdf9);
 }
 
@@ -320,7 +326,7 @@ a:focus {
   height:100%;
   width:100%;
   border-radius: 30px;
-  background-color: #ffffffbd;
+  background-color: #98dcfecc;
 }
 .hero-container {
   display: flex;
@@ -336,14 +342,14 @@ a:focus {
 
 }
 .hero_detail-box {
-  width: 40%;
+  width: 50%;
 }
 
 .hero_img-container {
   width: 68%;
   margin-right: -8%;
   margin-top: -5%;
-  padding-left:70px;
+  
 }
 
 .hero_img-container img {
@@ -368,6 +374,8 @@ a:focus {
   margin-top: 20px;
   margin-bottom: 35px;
   text-align: justify;
+  font-size: 23px;
+  font-weight:600
 }
 
 
@@ -389,7 +397,7 @@ a:focus {
 
 .common_style p {
   font-weight: 600;
-  color: #4e4f50;
+  color: #000000;
   margin: 30px 0 50px 0;
 }
 
