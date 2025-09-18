@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <link rel="icon" type="image/png" href="images/logo1.png">
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <script src="math.min.js"></script>
+  <script src="plotly-2.18.0.min.js"></script>
+
+  <title>Mate Refuerzo</title>
+
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- progress barstle -->
+  <link rel="stylesheet" href="css/css-circular-prog-bar.css">
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,600&display=swap" rel="stylesheet">
+  <!-- font wesome stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+
+
+
+  <link rel="stylesheet" href="css/css-circular-prog-bar.css">
+
+
+</head>
+
+<body class="sub_page">
+  <div class="top_container ">
+    <!-- header section strats -->
+    <header class="header_section">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+           <img class="logo-container1" src="images/logo1.png" alt=""></img>
+          <a class="navbar-brand" href="index.html">
+            <span>
+              Mate Refuerzo
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html"> Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="about.html"> Acerca de Funciones </a>
+                </li>
+
+                <li class="nav-item ">
+                  <a class="nav-link" href="admission.html"> Graficacion </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="why.html"> Actividades </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Material de apoyo</a>
+                </li>
+
+              </ul>
+            </div>
+            <div class = "logo-container">
+          <img src="images/logo.png" alt="" class="logo-container">
+          </div>
+        </nav>
+      </div>
+    </header>
+
+  </div>
+  <!-- end header section -->
+
+
+
+    <div class="columna3">
+        <div class="contenedor-3">
+            <div class="columna-3">
+ 
+            <p class="principal"> <h1 >Graficacion</h1>
+            
+                <p class="texto_instrucciones">Ingrese la funcion de transferencia del sistema de segundo orden para graficar su respuesta en el tiempo a una entrada escalon unitario</p>    
+          
+        </ul>
+        <ul class="columna-3">        
+             
+              <!-- Puedes colocar esto antes del botón "Graficar" -->
+                <p class="columna-3">
+                  Selecciona la función trigonométrica:
+                  <select id="lista">
+                    <option value="seno">Seno</option>
+                    <option value="coseno">Coseno</option>
+                    <option value="tangente">Tangente</option>
+                  </select>
+                </p>  
+                <p class="columna-3" >Ingrese la frecuencia de la función
+                    <input class="text" type="number" id="input_a" value="1" required />
+                </p>
+                 <p class="columna-3" >Ingrese el limite del eje y
+                    <input class="text" type="number" id="ganancia" value="1" required />
+                </p>
+                <p class="columna-3" >Ingrese rango minimo en x
+                    <input class="text" type="number" id="rangoi" value="0" required />
+                </p>
+                 <p class="columna-3" >Ingrese rango maximo en x
+                    <input class="text" type="number" id="rangod" value="6.28" required />
+                </p>
+        </ul>  
+
+        <ul style="justify-content: center;">        
+            <p style= "justify-content: center;">
+                <p style="justify-content: center;">
+                    <input class="call_to-btn btn_white-border" type="submit" id="boton" value="Graficar"/>
+                </p>    
+                <div  style="width: 80vw;padding-left: 10vw;" id="plot"></div> 
+
+
+        </ul>   
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+    <!-- end admission section -->
+
+
+  </div>
+
+  <!-- info section -->
+  <section class="info_section layout_padding-top">
+        <div class="info_logo-box">
+          <h2>
+              Mate Refuerzo
+          </h2>
+        </div>
+          <div class=".info_section .row">
+            <div class="row">
+              <div class="col-md-3">
+                <h5>
+                    Contactanos                                                                             
+                </h5>
+               <p>
+                  Juan José Sierra Juansierrra@gmail.com
+                  Daniel Samaniego Samaniego293@gmail.com
+                  Ivan Dario Fonseca Fonsecadario@gmail.com 
+               </p>
+              </div>
+              <div class="col-md-3">
+                <h5>
+                    Links Utiles
+                </h5>
+                <ul>
+                  <li>
+                    <a href="https://wordwall.net/es-mx/community/funciones-trigonom%C3%A9tricas">
+                        Video Juegos
+                    </a>
+                  </li>
+                  <li>
+                   <a href="https://www.youtube.com/watch?v=7pUi5lvLf7c&list=PLeySRPnY35dEAIFYvOhtD2cztVuq15qw1">
+                      Videos Explicativos 
+                   </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <h5>
+                    Contactanos 
+                </h5>
+                <p>
+                   Si deseas contactarte con nosotros para alguna recomendación u inquietud 
+                   escribenos a Materefuerzocelco@gmail.com
+                </p>
+              </div>
+              <div class="col-md-3">
+           
+                 
+                  <div class="social-box">
+                    <a href="">
+                      <img src="images/fb.png" alt="">
+                    </a>
+      
+                   
+                    </a>
+                    <a href="">
+                      <img src="images/instagram.png" alt="">
+                    </a>
+                  </div>
+                </div>
+          </div>
+        </section>
+
+   <script src="./PLOT_TF_SO.js"></script>
+
+</body>
+
+</html>
