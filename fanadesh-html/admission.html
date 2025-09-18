@@ -12,6 +12,8 @@
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
+  <script src="math.min.js"></script>
+  <script src="plotly-2.18.0.min.js"></script>
 
   <title>Mate Refuerzo</title>
 
@@ -65,7 +67,7 @@
                 </li>
 
                 <li class="nav-item ">
-                  <a class="nav-link" href="admission.html"> Graficas </a>
+                  <a class="nav-link" href="admission.html"> Graficacion </a>
                 </li>
 
                 <li class="nav-item">
@@ -88,33 +90,54 @@
   </div>
   <!-- end header section -->
 
-  <div class="common_style">
 
 
-
-    <!-- admission section -->
-       <div class="columna3">
+    <div class="columna3">
         <div class="contenedor-3">
             <div class="columna-3">
-               <strong><h1> Graficas de las Funciones </h1></strong>
-                <br>
-                <p>
-                  Las funciones trigonométricas como seno (sin), coseno (cos) y tangente (tan) tienen gráficas que forman ondas. Estas ondas muestran cómo cambian los valores cuando usamos diferentes ángulos (generalmente medidos en radianes o grados).
-
-Seno y coseno tienen formas de onda suaves que suben y bajan de forma repetitiva. Sirven para representar movimientos cíclicos como el de un columpio o una rueda girando.
-
-Tangente es diferente: su gráfica tiene curvas que se disparan hacia arriba o hacia abajo, y tiene "líneas invisibles" llamadas asíntotas donde la función no existe.
-              </p>
+ 
+            <p class="principal"> <h1 >Graficacion</h1>
+            
+                <p class="texto_instrucciones">Ingrese la funcion de transferencia del sistema de segundo orden para graficar su respuesta en el tiempo a una entrada escalon unitario</p>    
+          
+        </ul>
+        <ul class="columna-3">        
+             
+              <!-- Puedes colocar esto antes del botón "Graficar" -->
+                <p class="columna-3">
+                  Selecciona la función trigonométrica:
+                  <select id="lista">
+                    <option value="seno">Seno</option>
+                    <option value="coseno">Coseno</option>
+                    <option value="tangente">Tangente</option>
+                  </select>
+                </p>  
+                <p class="columna-3" >Ingrese la frecuencia de la función
+                    <input class="text" type="number" id="input_a" value="1" required />
                 </p>
-                </a>
+                 <p class="columna-3" >Ingrese el limite del eje y
+                    <input class="text" type="number" id="ganancia" value="1" required />
+                </p>
+                <p class="columna-3" >Ingrese rango minimo en x
+                    <input class="text" type="number" id="rangoi" value="0" required />
+                </p>
+                 <p class="columna-3" >Ingrese rango maximo en x
+                    <input class="text" type="number" id="rangod" value="6.28" required />
+                </p>
+        </ul>  
+
+        <ul style="justify-content: center;">        
+            <p style= "justify-content: center;">
+                <p style="justify-content: center;">
+                    <input class="call_to-btn btn_white-border" type="submit" id="boton" value="Graficar"/>
+                </p>    
+                <div  style="width: 80vw;padding-left: 10vw;" id="plot"></div> 
+
+
+        </ul>   
             </div>
         </div>
-        <img class="imagen4" src="images/admission.png" alt="">
         </div>
-          </div>
-        </div>
-      </div>
-    </div>
     </section>
 
 
@@ -192,7 +215,7 @@ Tangente es diferente: su gráfica tiene curvas que se disparan hacia arriba o h
           </div>
         </section>
 
- 
+   <script src="./PLOT_TF_SO.js"></script>
 
 </body>
 

@@ -51,6 +51,7 @@ video {
     flex: 1; 
     margin-right: 25px; 
 }
+
 .imagen1{
     height: 250px;
     border-radius: 20px;
@@ -629,12 +630,13 @@ a:focus {
 
 .info_section .row {
   align-items: center;
-  margin-left: 5%;
+  margin-left: 13%
 }
 
 .info_logo-box {
   display: flex;
   justify-content: center;
+  padding-bottom: 2%;
 }
 
 .info_logo-box h2 {
@@ -650,10 +652,12 @@ a:focus {
 .info_section ul li {
   list-style-type: none;
   margin: 3px 0;
+  margin-left: 10%;
 }
 
 .info_section ul li a {
   color: #ffffff;
+  padding: 10%;
 }
 
 .info_section ul li a:hover {
@@ -663,8 +667,8 @@ a:focus {
 .info_section h5 {
   margin-bottom: 12px;
   font-size: 22px;
+  margin-left: 10%;
 }
-
 
 
 .info_section .form_container input {
