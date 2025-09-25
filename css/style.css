@@ -1,6 +1,7 @@
 body {
   font-family: 'Raleway', sans-serif;
   background-image: url('../images/body-bg.png');
+  overflow-x:hidden
 }
 .game {
     display: flex;
@@ -9,6 +10,16 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
     padding-top: 100px;
+}
+/*Submenu*/
+.navbar-nav .dropdown:hover .dropdown-menu {
+  display: block;
+  transition-delay: 120ms;
+}
+.dropdown:hover .dropdown-menu {
+  transition: all 0.3s ease;
+  color: #ffffff;
+  background-color: #aedbff;
 }
 
 /*video prueba*/
@@ -37,12 +48,22 @@ video {
 
 /*prueba columna*/
 .columna3 {
-    background-color: #aedbff9e;
+    background-color: #aedbffa2;
     padding: 30px;
     margin: 0 10px;
     text-align: justify;
     border-radius: 10px;
     display: flex;
+    margin-top: 100px;
+    border: 2px solid var(--secundary-color); 
+}
+.columna4 {
+    background-color: #aedbffa2;
+    padding: 0px;
+    margin: 0 10px;
+    text-align: justify;
+    border-radius: 10px;
+    display: block;
     margin-top: 100px;
     border: 2px solid var(--secundary-color); 
 }
@@ -166,7 +187,8 @@ video {
   transition: all 0.3s ease 0s
   font-weight bold;
   text-align :center;
-  width: 1525px;
+  width: auto;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -185,7 +207,7 @@ video {
 
 nav.navbar.navbar-expand-lg {
 
-  padding: 10px;
+  padding: 0px;
 }
 
 .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
@@ -203,7 +225,6 @@ nav.navbar.navbar-expand-lg {
   text-transform: #ffffff;
   background-color: #ffffff6d;
 } 
-
 .logo-container {
    position:relative;
   display: flex;
@@ -271,7 +292,7 @@ a:focus {
 .top_container::after {
   content: "";
   position: absolute;
-  width: 75px;
+  width: 0px;
   height: 85px;
   bottom: 10%;
   left: 6%;;
