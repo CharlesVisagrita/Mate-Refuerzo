@@ -3,6 +3,9 @@ body {
   background-image: url('../images/body-bg.png');
   overflow-x:hidden
 }
+.tema {
+  filter:invert(1)
+}
 .game {
     display: flex;
     justify-content: center;
