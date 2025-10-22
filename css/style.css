@@ -118,7 +118,7 @@ video {
 }
 
 .contenedor-3 {
-    display: flex;
+    display:block;
 }
 .layout_padding {
   padding: 75px 0;

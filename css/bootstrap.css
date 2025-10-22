@@ -547,6 +547,10 @@ pre code {
 
 .container {
   width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media (min-width: 576px) {
@@ -4206,7 +4210,7 @@ input[type="button"].btn-block {
 }
 
 .navbar-collapse {
-  -ms-flex-preferred-size: 100%;
+  -ms-flex-preferred-size: 100%;   
   flex-basis: 100%;
   -ms-flex-positive: 1;
   flex-grow: 1;
@@ -4318,10 +4322,6 @@ input[type="button"].btn-block {
   }
   .navbar-expand-md .navbar-toggler {
     display: none;
-  }
-  .container {
-    padding-right: 0;
-    padding-left: 0;
   }
 }
 

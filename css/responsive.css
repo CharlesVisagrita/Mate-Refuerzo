@@ -29,6 +29,13 @@
 
 @media (max-width: 768px) {
 
+    .contenedor-3 {
+        flex-direction: column;
+    }
+    .columna3 {
+        flex-direction: column;
+        text-align: center;
+    }
 
     .hero_detail-box {
         text-align: center;
@@ -154,6 +161,10 @@
 
 /* Responsive styles for mobile devices */
 @media (max-width: 991px) {
+  .imagen3-container img {
+    width: 100%;
+  }
+  .co-container .container,
   .hero-container.container,
   .about_section .container,
   .admission_section .container,
@@ -176,7 +187,9 @@
     flex: 0 0 100%;
     margin-bottom: 20px;
   }
-
+  .columna3_detail-box {
+    margin-bottom: 30px;
+  }
   .hero_detail-box,
   .about_detail-box,
   .admission_detail-box,
@@ -184,7 +197,7 @@
   .determine_detail-box {
     text-align: center;
   }
-
+  .imagen3-container img,
   .hero_img-container img,
   .about_img-container img,
   .admission_img-container img,
@@ -197,11 +210,6 @@
     margin: 0 auto;
     display: block;
   }
-
-  .navbar-nav {
-    text-align: center;
-  }
-}
 
 @media (max-width: 600px) {
   h1, h2, h3, h5 {
@@ -225,4 +233,5 @@
   }
 }
 
-/* ...existing code... */
+/* ...existing code... */   
+}
