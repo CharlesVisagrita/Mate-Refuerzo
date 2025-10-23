@@ -323,7 +323,7 @@ a:focus {
 }
 
 .navbar-brand span {
-  font-size: 40px;
+  font-size: 25px;
   font-weight: 700;
   color: #212121;
   font-family: 'poppins', sans-serif;
@@ -341,7 +341,6 @@ a:focus {
 .custom_nav-container .navbar-toggler .navbar-toggler-icon {
   background-image: url(../images/menu.png);
   background-size: 40px;
-  margin-left:380px;
   padding-bottom: 40px;
 }
 
